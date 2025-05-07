@@ -1,9 +1,17 @@
-// Smooth scrolling behavior for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('section');
 
-    document.querySelector(this.getAttribute('href'))
-            .scrollIntoView({ behavior: 'smooth' });
-  });
+  const reveal = () => {
+    sections.forEach(section => {
+      const secTop = section.getBoundingClientRect().top;
+      if (secTop < window.innerHeight - 50) {
+        section.style.opacity = '1';
+        section.style.transform = 'translateY(0)';
+        section.style.transition = 'all 0.6s ease';
+      }
+    });
+  };
+
+  window.addEventListener('scroll', reveal);
+  reveal(); // call once to show sections in view
 });

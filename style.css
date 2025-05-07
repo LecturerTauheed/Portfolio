@@ -171,3 +171,27 @@ footer {
     height: 120px;
   }
 }
+<!----------------------------------------------------------------------->
+#about {
+  padding: 3rem 1rem;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+#about .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#about h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}

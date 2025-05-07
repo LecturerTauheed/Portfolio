@@ -11,13 +11,18 @@ body {
   line-height: 1.6;
 }
 
-header {
+/*header {
   background-color: #222;
   color: #fff;
   padding: 2rem 0;
   text-align: center;
+}*/
+header {
+  background: linear-gradient(135deg, #3b82f6, #14b8a6);
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
 }
-
 .profile-pic {
   width: 150px;
   height: 150px;

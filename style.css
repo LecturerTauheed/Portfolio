@@ -236,6 +236,11 @@ footer {
   position: relative;
 }
 
+/* Dropdown Menu Styles */
+.nav-links li {
+  position: relative;
+}
+
 .nav-links .dropdown-content {
   display: none;
   position: absolute;

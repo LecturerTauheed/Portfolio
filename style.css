@@ -1,4 +1,4 @@
-* {
+/** {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -22,9 +22,9 @@ body {
   color: #d1d5db;
   margin-bottom: 0.5rem;
 }
-<!------------------------------------------>
+*/
 /* Navbar Styles */
-.navbar {
+/*.navbar {
   background-color: #1e3a8a;
   color: white;
   padding: 0.75rem 0;
@@ -65,8 +65,8 @@ body {
 .nav-links a:hover {
   color: #facc15; /* golden hover color */
 }
-
-@media (max-width: 768px) {
+*/
+/*@media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
     background: #1e3a8a;
@@ -188,7 +188,7 @@ footer {
   margin-bottom: 1rem;
 }
 */
- ul {
+ /*ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -204,9 +204,9 @@ footer {
       background-color: #333;
       color: white;
     }
-
+*/
     /* Dropdown menu */
-    .dropdown-content {
+ /*   .dropdown-content {
       display: none;
       position: absolute;
       background-color: #444;
@@ -230,14 +230,14 @@ footer {
 
     .dropdown-content a:hover {
       background-color: #666;
-    }
+    }*/
 /* Dropdown Menu Styles */
-.nav-links li {
+/*.nav-links li {
   position: relative;
 }
-
+*/
 /* Dropdown Menu Styles */
-.nav-links li {
+/*.nav-links li {
   position: relative;
 }
 
@@ -269,4 +269,191 @@ footer {
 
 .nav-links li:hover .dropdown-content {
   display: block;
+}
+*/
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header and Navbar */
+header {
+  background: linear-gradient(135deg, #3b82f6, #14b8a6);
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  background-color: #1e3a8a;
+  padding: 0.75rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #facc15;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  background: transparent;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.dropdown-content li {
+  display: block;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-content li a {
+  color: #333;
+  padding: 10px 15px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: #f0f0f0;
+  color: #1e3a8a;
+}
+
+/* Profile Section */
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  margin-top: 1rem;
+}
+
+.taglines {
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.taglines h2, .taglines h3 {
+  color: #d1d5db;
+}
+
+.taglines p {
+  font-size: 1rem;
+  color: #e5e7eb;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Content */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 1.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+  position: sticky;
+  bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #1e3a8a;
+    display: none;
+    padding: 1rem;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
 }

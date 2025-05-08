@@ -1,4 +1,4 @@
-* {
+/** {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* Navbar Styles */
+
 .navbar {
  
   color: white;
@@ -63,7 +63,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #facc15; /* golden hover color */
+  color: #facc15; 
 }
 
 @media (max-width: 768px) {
@@ -163,7 +163,7 @@ footer {
     height: 120px;
   }
 }
-     /* Dropdown menu */
+     
    .dropdown-content {
       display: none;
       position: absolute;
@@ -183,18 +183,18 @@ footer {
     }
 
     li:hover > a {
-      /*background-color: #555;*/
+      
     }
 
     .dropdown-content a:hover {
-      /*background-color: #666;*/
+      
     }
-/* Dropdown Menu Styles */
+
 .nav-links li {
   position: relative;
 }
 
-/* Dropdown Menu Styles */
+
 .nav-links li {
   position: relative;
 }
@@ -221,10 +221,28 @@ footer {
   white-space: nowrap;
 }
 
-/*.nav-links .dropdown-content a:hover {
+.nav-links .dropdown-content a:hover {
   background-color: #3b82f6;
-}*/
+}
 
 .nav-links li:hover .dropdown-content {
   display: block;
+}
+*/
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #3b82f6, #14b8a6);
+}
+
+.taglines h2, .taglines h3, .taglines p {
+  color: #f1f5f9;
 }

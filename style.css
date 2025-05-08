@@ -188,3 +188,46 @@ footer {
   margin-bottom: 1rem;
 }
 */
+ ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      position: relative;
+      display: inline-block;
+    }
+    a {
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+      background-color: #333;
+      color: white;
+    }
+
+    /* Dropdown menu */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #444;
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      color: white;
+    }
+
+    li:hover .dropdown-content {
+      display: block;
+    }
+
+    li:hover > a {
+      background-color: #555;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #666;
+    }

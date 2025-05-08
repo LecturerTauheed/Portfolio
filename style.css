@@ -183,7 +183,7 @@ footer {
     }
 
     li:hover > a {
-      background-color: #555;
+      /*background-color: #555;*/
     }
 
     .dropdown-content a:hover {

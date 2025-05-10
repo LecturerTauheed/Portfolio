@@ -15,3 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', reveal);
   reveal(); // call once to show sections in view
 });
+
+///////////////////////////
+document.getElementById('hamburger').addEventListener('click', function () {
+  const navLinks = document.getElementById('nav-links');
+  navLinks.classList.toggle('active');
+});

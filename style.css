@@ -1,4 +1,4 @@
-/* Basic Reset */
+/* ========== Base Reset ========== */
 * {
   margin: 0;
   padding: 0;
@@ -12,14 +12,14 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar Styling */
+/* ========== Navbar ========== */
 .navbar {
-  /* No background color here */
-  color: white;
   padding: 10px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
+  color: white;
+  /* No background-color to keep it transparent or inherit */
 }
 
 .nav-container {
@@ -52,14 +52,14 @@ body {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
   color: #facc15;
 }
 
-/* Dropdown */
+/* ========== Dropdown Menu ========== */
 .nav-links .dropdown-content {
   display: none;
   position: absolute;
@@ -90,20 +90,26 @@ body {
   display: block;
 }
 
-/* Hamburger for mobile */
+/* ========== Hamburger (Mobile) ========== */
 .hamburger {
   display: none;
   font-size: 30px;
   cursor: pointer;
+  color: white;
 }
 
-/* Responsive Design */
+/* ========== Responsive Styles ========== */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
-    width: 100%;
     background-color: #333;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 999;
+    padding: 1rem;
   }
 
   .nav-links.active {
@@ -124,7 +130,7 @@ body {
   }
 }
 
-/* Header Section */
+/* ========== Header Section ========== */
 header {
   background: linear-gradient(135deg, #3b82f6, #14b8a6);
   color: #fff;
@@ -145,6 +151,7 @@ header {
   margin-top: 1rem;
 }
 
+/* ========== Container & Sections ========== */
 .container {
   max-width: 1000px;
   margin: auto;
@@ -176,34 +183,23 @@ ul {
   margin-left: 1.5rem;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #222;
-  color: white;
-  position: sticky;
-  bottom: 0;
-}
-
+/* ========== Tagline Section ========== */
 .taglines {
   margin-top: 1rem;
   padding: 0 1rem;
-}
-
-.taglines h2,
-.taglines h3,
-.taglines p {
-  color: #f1f5f9;
+  text-align: center;
 }
 
 .taglines h2 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  color: #f1f5f9;
 }
 
 .taglines h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  color: #f1f5f9;
 }
 
 .taglines p {
@@ -211,4 +207,15 @@ footer {
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.6;
+  color: #f1f5f9;
+}
+
+/* ========== Footer ========== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+  position: sticky;
+  bottom: 0;
 }

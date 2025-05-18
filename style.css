@@ -19,7 +19,7 @@ body {
   top: 0;
   z-index: 1000;
   color: white;
-  background: #f4f4f4;
+  /*background: #f4f4f4;*/
   /* No background-color to keep it transparent or inherit */
 }
 

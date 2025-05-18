@@ -10,46 +10,51 @@
 
   <header>
     <nav class="navbar">
-  <div class="nav-container">
-    <div class="logo">MyPortfolio</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#certificate">Certificate</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>  
+      <div class="nav-container">
+        <div class="logo">MyPortfolio</div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">&#9776;</div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certificate">Certificate</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <img src="tauheedahmadshah.jpg" alt="My Photo" class="profile-pic" />
     <h1>TAUHEED AHMAD SHAH</h1>
-  <div class="taglines">
-  <h2> Lecturer Computer Science | Web Developer | Remote Freelancer | Creative Problem Solver</h2>
-  <h3>Expert in Generative AI for Educational Content & Marketing</h3>
-  <p>
-    <strong>Syllabus Designer</strong> · 
-    <strong>AI-based Image & Video Creator</strong> · 
-    <strong>ADs & Poem Generator</strong> · 
-    <strong>Copywriter for Marketing Success</strong>
-  </p>
-</div>
+    <div class="taglines">
+      <h2>Lecturer Computer Science | Web Developer | Remote Freelancer | Creative Problem Solver</h2>
+      <h3>Expert in Generative AI for Educational Content & Marketing</h3>
+      <p>
+        <strong>Syllabus Designer</strong> · 
+        <strong>AI-based Image & Video Creator</strong> · 
+        <strong>ADs & Poem Generator</strong> · 
+        <strong>Copywriter for Marketing Success</strong>
+      </p>
+    </div>
   </header>
 
   <div class="container">
     <section id="about">
-      <h2 style="padding-left:20px;;">About Me</h2>
-      <p style="text-align: justify; padding:20px;">I am a passionate and dedicated <strong>Lecturer in Computer Science</strong> currently serving in the 
-      <strong>Khyber Pakhtunkhwa Higher Education Department</strong> since 2024. I am committed to shaping the future of technology by teaching and mentoring undergraduate students in computer science subjects such as programming, web development, and software engineering.
-      <br>
-      Before joining the Higher Education Department, I served as a <strong>Certified Information Technology Teacher (CT-IT)</strong> in the <strong>Elementary and Secondary Education Department of Khyber Pakhtunkhwa</strong>. During this tenure, I played a key role in introducing and strengthening IT skills at the school level, helping students build a strong foundation in digital literacy and technology.
-     <br>
-    
-      With a deep understanding of both academic and practical aspects of computer science, I bring a unique blend of teaching, technical expertise, and real-world problem-solving. I am also skilled in curriculum design, academic advising, and integrating innovative teaching methods using technology.
-    </p> 
-
+      <h2 style="padding-left:20px;">About Me</h2>
+      <p style="text-align: justify; padding:20px;">
+        I am a passionate and dedicated <strong>Lecturer in Computer Science</strong> currently serving in the 
+        <strong>Khyber Pakhtunkhwa Higher Education Department</strong> since 2024. I am committed to shaping the future of technology by teaching and mentoring undergraduate students in computer science subjects such as programming, web development, and software engineering.
+        <br><br>
+        Before joining the Higher Education Department, I served as a <strong>Certified Information Technology Teacher (CT-IT)</strong> in the 
+        <strong>Elementary and Secondary Education Department of Khyber Pakhtunkhwa</strong>. During this tenure, I played a key role in introducing and strengthening IT skills at the school level, helping students build a strong foundation in digital literacy and technology.
+        <br><br>
+        With a deep understanding of both academic and practical aspects of computer science, I bring a unique blend of teaching, technical expertise, and real-world problem-solving. I am also skilled in curriculum design, academic advising, and integrating innovative teaching methods using technology.
+      </p>
     </section>
-   
 
     <section id="education">
       <h2>Education</h2>
@@ -69,12 +74,15 @@
         <li>Internship at TechSoft Pvt Ltd (2021 - 2022)</li>
       </ul>
     </section>
-        <section id="projects">
+
+    <section id="projects">
       <h2>Projects</h2>
       <ul>
         <li>Lecturer at Government College Peshawar (2024 - Present)</li>
-        <li> Generative AI
-        <ul> <li style="text-decoration: none; color: black;" ><a href="cardiac.html"> Cardiac Surgery</a></li></ul>
+        <li>Generative AI
+          <ul>
+            <li><a href="cardiac.html" style="text-decoration: none; color: black;">Cardiac Surgery</a></li>
+          </ul>
         </li>
         <li>Internship at TechSoft Pvt Ltd (2021 - 2022)</li>
       </ul>
@@ -85,6 +93,15 @@
     &copy; 2025 TAUHEED AHMAD SHAH. All Rights Reserved.
   </footer>
 
-  <script src="script.js"></script>
+  <!-- JS for responsive nav toggle -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
 </body>
-</html>s
+</html>
